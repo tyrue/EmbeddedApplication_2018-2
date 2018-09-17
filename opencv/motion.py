@@ -8,7 +8,7 @@ def diffImage(i):
 
 def getGrayCameraImage(cam):
     img=cam.read()[1]
-    gimg=cv2.cvtColor(img, cv2.COLOR_RGB2GRAY)
+    gimg=cv2.cvtColor(img, cv2.COLOR_BGR2GRAY)
     return gimg
 
 def updateCameraImage(cam, i):
@@ -40,7 +40,7 @@ if __name__ == "__main__":
         updateCameraImage(cam, i)
 
         key = cv2.waitKey(10)
-        if key == 27:
+        if key == 27: # ascii code for 'ESC'
             break
     
     cam.release()
