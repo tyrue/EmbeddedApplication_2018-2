@@ -8,8 +8,8 @@ with picamera.PiCamera() as camera:
     time.sleep(2)
     for filename in camera.capture_continuous('img{counter:03d}.jpg'):
         print("Captured %s" % filename)
-        time.sleep(5)
+        time.sleep(1)
         i = i + 1
-        if i == 10:
+        if i == 5:
             break
 

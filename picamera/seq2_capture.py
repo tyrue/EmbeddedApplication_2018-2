@@ -10,6 +10,6 @@ with picamera.PiCamera() as camera:
         print("Captured %s" % filename)
         time.sleep(1)
         i = i + 1
-        if i == 10:
+        if i == 5:
             break
 
