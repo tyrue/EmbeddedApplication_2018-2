@@ -2,7 +2,6 @@ import cv2
 
 cam = cv2.VideoCapture(0)
 print("resolution: ", cam.get(3), cam.get(4))
-
 cam.set(3, 320)
 cam.set(4, 240)
 
